@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "dataSource": {
+      "title": "Custom widget data source",
+      "type": "object",
+      "properties": {
+        "serviceName": {
+          "type": "string",
+          "title": "Service",
+          "enum": ["epts", "epr"],
+          "enumNames": ["EPTS", "EPR"],
+          "default": "epts"
+        },
+        "applicationName": {
+          "type": "string",
+          "title": "Application name",
+          "enum": [],
+          "enumNames": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.root {
+    padding: 16px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    color: #D7E2E7;
+    border: 1px solid grey;
+}
+
+td {
+    font-size: 12px;
+    padding-left: 2%;
+    line-height: 22px;
+    border: 1px solid grey;
+}
+
+th {
+    border: 1px solid grey;
+    background:darkslategray;
+}
+
+.spinner {
+    margin-top: 30px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+
+.spinner:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid darkslategray;
+    border-color: darkslategray transparent darkslategray transparent;
+    animation: spinner 1.2s linear infinite;
+}
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,8 @@
+{
+  "packageName": "@kaa/custom-widget-demo",
+  "name": "Custom widget demo",
+  "description": "Example of custom widget",
+  "category": "Experimental",
+  "preview": "preview.svg",
+  "version": "1.0.0"
+}
