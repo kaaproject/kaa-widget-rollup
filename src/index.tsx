@@ -1,6 +1,6 @@
 import App from "./App";
 import React from "react";
-import { render } from "react-dom";
+import { createRoot } from 'react-dom/client';
 import configSchema from "./schemas/schema.json";
 import uiSchema from "./schemas/uiSchema";
 import { WidgetConfig } from "./types";
@@ -13,7 +13,8 @@ export const mount = (
   nodeElement,
   context: WidgetModuleContext<WidgetConfig>
 ) => {
-  render(<App widgetContext={context} />, nodeElement.rootNodeElement);
+  const root = createRoot(nodeElement.rootNodeElement);
+  root.render(<App widgetContext={context} />);
 };
 
 // Some teardown logic on unmount

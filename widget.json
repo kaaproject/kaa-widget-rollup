@@ -1,7 +1,7 @@
 {
-  "packageName": "@kaa/custom-widget-demo",
+  "packageName": "@kaa/custom-widget-rollup-demo",
   "name": "Custom widget demo",
-  "description": "Example of custom widget",
+  "description": "Example of custom widget using rollup bundler",
   "category": "Experimental",
   "preview": "preview.svg",
   "version": "1.0.0"

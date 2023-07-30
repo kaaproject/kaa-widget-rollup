@@ -10,7 +10,7 @@ This is basic template that help you to build [Custom widget](https://docs.kaaio
 ## Prerequisites
 
 * Access to KaaIoT UI. You can [create a free cloud account](https://www.kaaproject.org/free-trial) if you don't have one.
-* [Node.js](https://nodejs.org/en/) > 15 or [nvm](https://github.com/nvm-sh/nvm)
+* [Node.js](https://nodejs.org/en/) > 18 or [nvm](https://github.com/nvm-sh/nvm)
 * npm
 
 ## Up and running
@@ -18,7 +18,7 @@ This is basic template that help you to build [Custom widget](https://docs.kaaio
 Clone this repo:
 
 ```sh
-git clone https://github.com/kaaproject/kaa-widget-webpack.git
+git clone https://github.com/kaaproject/kaa-widget-rollup.git
 ```
 
 If you have nvm:

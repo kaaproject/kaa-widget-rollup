@@ -1,3 +1,4 @@
+import fs from 'fs';
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
@@ -7,9 +8,9 @@ import json from '@rollup/plugin-json';
 import serve from 'rollup-plugin-serve';
 import svg from 'rollup-plugin-svg';
 import copy from 'rollup-plugin-copy-watch';
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 
-const packageJson = require("./package.json");
+const packageJson = JSON.parse(fs.readFileSync("./package.json"));
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
